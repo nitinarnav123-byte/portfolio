@@ -172,11 +172,8 @@ nav{will-change:background}
 .page.active{contain:none}
 .card,.btn,.cs,.wf-ph-ov,.c-img,.mob{will-change:auto}
 .card:hover,.btn:hover{will-change:transform,box-shadow}
-/* Smooth scroll on in-page hash nav */
 html{scroll-behavior:smooth}
-/* Prevent layout shift from font loading */
 body{font-display:optional}
-/* Reduce paint area for fixed nav */
 nav{contain:layout style}
 
 .rv{opacity:0;transform:translateY(24px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
@@ -281,7 +278,6 @@ nav{contain:layout style}
 .stat-n sub{font-size:.78rem;color:var(--gold-l);font-style:normal;margin-left:4px;letter-spacing:.06em;text-transform:uppercase}
 .stat-l{font-size:.64rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-55);margin-top:10px}
 
-/* ticker */
 .ticker-wrap{background:var(--black);padding:14px 0;overflow:hidden;border-bottom:1px solid var(--ink-07)}
 .ticker-wrap:hover .ticker{animation-play-state:paused}
 .ticker{display:flex;animation:tick 40s linear infinite;white-space:nowrap}
@@ -289,11 +285,9 @@ nav{contain:layout style}
 .ti::before{content:'◆';color:var(--gold-d);margin-right:16px;font-size:.48rem}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* work teaser */
 .work-teaser{background:var(--warm);border-top:1px solid var(--txt-15)}
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:64px}
 
-/* cards */
 .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .card{
   display:flex;flex-direction:column;
@@ -330,7 +324,6 @@ nav{contain:layout style}
 .c-live:hover{background:var(--gold-d)}
 .c-live svg{width:12px;height:12px;margin-left:auto}
 
-/* why dark */
 .why-sec{background:var(--char);position:relative;overflow:hidden}
 .why-sec::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 100% 70% at 100% 50%,rgba(201,168,108,.07) 0%,transparent 55%)}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center;position:relative;z-index:1}
@@ -383,7 +376,6 @@ nav{contain:layout style}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 .why-deco{position:absolute;right:-20px;bottom:-20px;width:60%;height:40%;border:1px solid rgba(201,168,108,.18);z-index:-1}
 
-/* testimonials */
 .testi-sec{background:var(--cream)}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 .testi{background:var(--warm);padding:40px 36px;display:flex;flex-direction:column;gap:24px;border:1px solid var(--txt-15)}
@@ -394,7 +386,6 @@ nav{contain:layout style}
 .testi-name{font-size:.82rem;font-weight:500;color:var(--txt);letter-spacing:.02em}
 .testi-role{font-size:.72rem;font-weight:400;color:var(--gold-d);letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
 
-/* comparison */
 .cmp-sec{background:var(--warm)}
 .cmp-table{width:100%;border-collapse:collapse;margin-top:48px;font-size:.9rem}
 .cmp-table th{font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--txt-65);padding:14px 20px;text-align:left;border-bottom:2px solid var(--txt-15)}
@@ -404,7 +395,6 @@ nav{contain:layout style}
 .td-good{color:var(--gold-d);font-weight:700}
 .td-bad{color:var(--txt-35)}
 
-/* cta band */
 .cta-band{background:var(--black);position:relative;overflow:hidden;padding:clamp(72px,9vw,120px) clamp(24px,5.5vw,80px)}
 .cta-band::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 100% at 90% 50%,rgba(201,168,108,.08) 0%,transparent 60%)}
 .cta-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr auto;align-items:center;gap:64px;position:relative;z-index:1}
@@ -422,7 +412,6 @@ nav{contain:layout style}
 .wa-link:hover{border-color:var(--ink-30);color:var(--ink-80)}
 .wa-link svg{width:15px;height:15px;color:#25D366;flex-shrink:0}
 
-/* ── FLOATING ── */
 .wa-float{
   position:fixed;bottom:28px;right:28px;z-index:500;
   width:52px;height:52px;border-radius:50%;
@@ -434,14 +423,10 @@ nav{contain:layout style}
 .wa-float:hover{transform:scale(1.08) translateY(-2px);box-shadow:0 12px 40px rgba(37,211,102,.45)}
 .wa-float svg{width:26px;height:26px}
 
-/* ── FOCUS ── */
 :focus-visible{outline:3px solid var(--gold-d);outline-offset:3px}
 button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-offset:3px}
 
-/* ── SKIP LINK ── */
-.skip{
-  position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
-}
+.skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip:focus{
   position:fixed;left:16px;top:16px;width:auto;height:auto;overflow:visible;
   z-index:9999;background:var(--gold-d);color:#fff;
@@ -489,11 +474,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 .pc.pop{background:var(--black)}
 .pc.pop::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 70% at 50% 0%,rgba(201,168,108,.1) 0%,transparent 60%)}
 .pc:hover{transform:translateY(-4px);box-shadow:0 24px 72px rgba(0,0,0,.14)}
-.pc-badge{
-  display:inline-block;
-  font-size:.56rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--black);background:var(--gold);padding:4px 12px;margin-bottom:24px;
-}
+.pc-badge{display:inline-block;font-size:.56rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--black);background:var(--gold);padding:4px 12px;margin-bottom:24px}
 .pc-tier{font-size:.58rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
 .pc-lt .pc-tier{color:var(--gold-d)}
 .pc-dk .pc-tier{color:var(--gold-l)}
@@ -523,7 +504,6 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 .maint-sub{font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-l);margin-top:4px}
 .maint-desc{font-size:.92rem;font-weight:400;line-height:1.85;color:var(--ink-55);max-width:440px}
 
-/* full comparison table */
 .full-cmp{margin-top:48px;overflow-x:auto}
 .full-cmp table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:540px}
 .full-cmp th{padding:14px 22px;text-align:left;border-bottom:2px solid var(--ink-14);font-size:.58rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
@@ -538,17 +518,13 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 /* ════════════ PROCESS ════════════ */
 .pros-grid{display:grid;grid-template-columns:1fr 400px;gap:80px;align-items:start}
 .step-list{display:flex;flex-direction:column;gap:0}
-.step{
-  display:grid;grid-template-columns:60px 1fr;gap:24px;
-  padding:36px 0;border-top:1px solid var(--txt-15);
-}
+.step{display:grid;grid-template-columns:60px 1fr;gap:24px;padding:36px 0;border-top:1px solid var(--txt-15)}
 .step:last-of-type{border-bottom:1px solid var(--txt-15)}
 .step-n{font-family:var(--serif);font-size:.9rem;font-weight:300;color:var(--gold-d);padding-top:5px}
 .step-t{font-family:var(--serif);font-size:1.25rem;font-weight:400;margin-bottom:10px}
 .step-d{font-size:.9rem;font-weight:400;line-height:1.85;color:var(--txt-65);margin-bottom:14px}
 .step-tag{display:inline-block;font-size:.56rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-d);border:1px solid rgba(158,122,56,.35);padding:4px 12px}
 
-/* aside cards */
 .pros-aside{position:sticky;top:calc(var(--nav-h) + 32px)}
 .p-card{background:var(--black);padding:40px 36px;position:relative;overflow:hidden;margin-bottom:20px}
 .p-card::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 60% at 20% 20%,rgba(201,168,108,.09) 0%,transparent 60%)}
@@ -556,10 +532,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 .p-card-h{font-family:var(--serif);font-size:1.6rem;font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:16px}
 .p-card-p{font-size:.9rem;font-weight:400;line-height:1.85;color:var(--ink-55);margin-bottom:28px}
 .p-list{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
-.p-item{
-  display:flex;align-items:center;gap:11px;
-  font-size:.84rem;font-weight:400;color:var(--ink-55);
-}
+.p-item{display:flex;align-items:center;gap:11px;font-size:.84rem;font-weight:400;color:var(--ink-55)}
 .p-item::before{content:'';width:18px;height:1px;background:var(--gold-d);flex-shrink:0}
 .timeline-card{background:var(--cream);padding:32px 36px;border:1px solid var(--txt-15)}
 .tl-row{display:grid;grid-template-columns:60px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--txt-15)}
@@ -567,15 +540,10 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 .tl-day{font-size:.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d)}
 .tl-txt{font-size:.88rem;font-weight:400;color:var(--txt-65);line-height:1.5}
 
-/* FAQ */
 .faq-list{margin-top:32px;display:flex;flex-direction:column}
 .faq-item{border-top:1px solid var(--txt-15)}
 .faq-item:last-child{border-bottom:1px solid var(--txt-15)}
-.faq-q{
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
-  padding:22px 0;cursor:pointer;
-  transition:color .3s var(--ease);
-}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;cursor:pointer;transition:color .3s var(--ease)}
 .faq-q:hover{color:var(--gold-d)}
 .faq-q-txt{font-family:var(--serif);font-size:1.1rem;font-weight:400;line-height:1.3}
 .faq-icon{width:20px;height:20px;flex-shrink:0;color:var(--gold-d)}
@@ -587,11 +555,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 /* ════════════ CONTACT ════════════ */
 .k-grid{display:grid;grid-template-columns:1fr 480px;gap:80px;align-items:start}
 .cs-list{display:flex;flex-direction:column;gap:2px;margin-bottom:48px}
-.cs{
-  display:flex;align-items:center;gap:20px;padding:22px 24px;
-  text-decoration:none;background:var(--cream);border:1px solid var(--txt-15);
-  transition:background .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease);
-}
+.cs{display:flex;align-items:center;gap:20px;padding:22px 24px;text-decoration:none;background:var(--cream);border:1px solid var(--txt-15);transition:background .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease)}
 .cs:hover{background:var(--parch);border-color:var(--txt-35);transform:translateX(4px)}
 .cs-ico{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .cs-ico svg{width:18px;height:18px}
@@ -605,8 +569,6 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 .cal-head{display:flex;align-items:center;gap:10px;padding:18px 24px;border-bottom:1px solid var(--txt-15)}
 .cal-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:blink 2s infinite}
 .cal-head-txt{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-65)}
-.cal-embed{width:100%;height:420px;border:none;display:block}
-.cal-fallback{padding:32px 24px;display:none}
 .inf-list{display:flex;flex-direction:column;gap:0}
 .inf-item{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--txt-15)}
 .inf-item:last-child{border-bottom:none}
@@ -618,38 +580,14 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .fg{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
 .flbl{font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--txt-35)}
-.fi{
-  background:var(--warm);border:1px solid var(--txt-15);
-  padding:12px 16px;font-family:var(--sans);font-size:.9rem;color:var(--txt);
-  outline:none;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);
-  -webkit-appearance:none;border-radius:0;
-}
+.fi{background:var(--warm);border:1px solid var(--txt-15);padding:12px 16px;font-family:var(--sans);font-size:.9rem;color:var(--txt);outline:none;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);-webkit-appearance:none;border-radius:0}
 .fi:focus{border-color:var(--gold-d);box-shadow:0 0 0 3px rgba(158,122,56,.1)}
-.fsel{
-  background:var(--warm);border:1px solid var(--txt-15);
-  padding:12px 16px;font-family:var(--sans);font-size:.9rem;color:var(--txt);
-  outline:none;transition:border-color .3s var(--ease);
-  -webkit-appearance:none;border-radius:0;cursor:pointer;
-}
+.fsel{background:var(--warm);border:1px solid var(--txt-15);padding:12px 16px;font-family:var(--sans);font-size:.9rem;color:var(--txt);outline:none;transition:border-color .3s var(--ease);-webkit-appearance:none;border-radius:0;cursor:pointer}
 .fsel:focus{border-color:var(--gold-d)}
-.fta{
-  background:var(--warm);border:1px solid var(--txt-15);
-  padding:12px 16px;font-family:var(--sans);font-size:.9rem;color:var(--txt);
-  outline:none;resize:vertical;min-height:120px;
-  transition:border-color .3s var(--ease),box-shadow .3s var(--ease);
-  -webkit-appearance:none;border-radius:0;
-}
+.fta{background:var(--warm);border:1px solid var(--txt-15);padding:12px 16px;font-family:var(--sans);font-size:.9rem;color:var(--txt);outline:none;resize:vertical;min-height:120px;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);-webkit-appearance:none;border-radius:0}
 .fta:focus{border-color:var(--gold-d);box-shadow:0 0 0 3px rgba(158,122,56,.1)}
 .hp{position:absolute;left:-9999px}
-.fsub{
-  width:100%;padding:16px 28px;
-  background:var(--gold-d);color:#fff;
-  font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
-  border:none;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  transition:background .35s var(--ease),transform .35s var(--ease);
-  border-radius:0;
-}
+.fsub{width:100%;padding:16px 28px;background:var(--gold-d);color:#fff;font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .35s var(--ease),transform .35s var(--ease);border-radius:0}
 .fsub:hover{background:var(--gold);transform:translateY(-2px)}
 .fsub:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .fsub svg{width:15px;height:15px}
@@ -669,7 +607,6 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold-d);outline-off
 .mt-80{margin-top:80px}
 .unsure-p{font-size:.95rem;font-weight:400;color:var(--ink-55);line-height:1.85;max-width:440px}
 
-/* ── FOOTER ── */
 footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80px) 28px}
 .ft{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--ink-07)}
 .f-logo{font-family:var(--serif);font-size:1.7rem;font-weight:300;color:var(--ink);margin-bottom:10px}
@@ -692,28 +629,10 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
 .f-leg button{font-size:.68rem;font-weight:400;color:rgba(246,243,238,.28);background:none;border:none;cursor:pointer;transition:color .25s}
 .f-leg button:hover{color:rgba(246,243,238,.68)}
 
-/* ── MOBILE STICKY BAR ── */
-.mob-bar{
-  display:none;
-  position:fixed;bottom:0;left:0;right:0;z-index:580;
-  background:var(--black);border-top:1px solid var(--ink-14);
-  padding:12px 20px;
-  align-items:center;justify-content:space-between;gap:12px;
-  backdrop-filter:blur(16px);
-}
-.mob-bar-num{
-  font-family:var(--serif);font-size:1rem;font-weight:300;
-  color:var(--ink-80);text-decoration:none;letter-spacing:.02em;
-}
-.mob-bar-btn{
-  display:inline-flex;align-items:center;gap:8px;
-  background:var(--gold-d);color:#fff;
-  font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  padding:11px 22px;border:none;cursor:pointer;white-space:nowrap;
-  text-decoration:none;
-}
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:580;background:var(--black);border-top:1px solid var(--ink-14);padding:12px 20px;align-items:center;justify-content:space-between;gap:12px;backdrop-filter:blur(16px)}
+.mob-bar-num{font-family:var(--serif);font-size:1rem;font-weight:300;color:var(--ink-80);text-decoration:none;letter-spacing:.02em}
+.mob-bar-btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold-d);color:#fff;font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:11px 22px;border:none;cursor:pointer;white-space:nowrap;text-decoration:none}
 
-/* ── RESPONSIVE ── */
 @media(max-width:1080px){
   .testi-grid{grid-template-columns:1fr}
   .why-grid{grid-template-columns:1fr;gap:56px}
@@ -763,11 +682,10 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
 </style>
 </head>
 <body>
-<noscript><style>body{display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:sans-serif;padding:40px;text-align:center}</style><p>Denne siden krever JavaScript. Kontakt oss på <a href="tel:+4748923626">+47 489 23 626</a> eller <a href="mailto:post.studionett@gmail.com">post.studionett@gmail.com</a>.</p></noscript>
+<noscript><p style="padding:40px;text-align:center;font-family:sans-serif">Denne siden krever JavaScript. Kontakt oss på <a href="tel:+4748923626">+47 489 23 626</a> eller <a href="mailto:post.studionett@gmail.com">post.studionett@gmail.com</a>.</p></noscript>
 
 <a class="skip" href="#main">Hopp til innhold</a>
 
-<!-- NAV -->
 <nav id="nav" class="dk">
   <span class="logo" onclick="go('hjem')">StudioNett<span class="dot">.</span></span>
   <ul class="nl">
@@ -787,7 +705,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
   <button onclick="go('kontakt');cm()">Book konsultasjon</button>
 </div>
 
-<!-- Message float -->
 <a class="wa-float" href="sms:+4748923626" aria-label="Send melding">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
 </a>
@@ -795,10 +712,9 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
 <!-- ══════════════ PAGE: HJEM ══════════════ -->
 <div class="page active" id="page-hjem">
 <main id="main">
-
   <section class="hero">
     <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="StudioNett studio" loading="eager" fetchpriority="high" decoding="async">
+      <img src="https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?q=80&w=2070&auto=format&fit=crop" alt="StudioNett studio" loading="eager" fetchpriority="high" decoding="async">
     </div>
     <div class="hero-c">
       <div class="hero-loc">Asker &nbsp;·&nbsp; Bærum &nbsp;·&nbsp; Oslo</div>
@@ -835,7 +751,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
     </div>
   </div>
 
-  <!-- WORK TEASER -->
   <section class="work-teaser sec">
     <div class="w">
       <div class="sec-head rv">
@@ -848,32 +763,32 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       </div>
       <div class="card-grid">
         <div class="card rv">
-          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Røyken Rørlegger" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://royken-rorlegger-demo.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
+          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1974&auto=format&fit=crop" alt="Røyken Rørlegger" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://royken-rorlegger-3pa5.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
           <div class="c-body"><div class="c-tier">Growth — Rørlegger</div><div class="c-name">Røyken Rørlegger AS</div><p class="c-desc">VVS-nettside med booking, akuttbanner og Google Maps.</p><div class="c-tags"><span class="c-tag">5 sider</span><span class="c-tag">Booking</span><span class="c-tag">Lokal SEO</span><span class="c-tag">Maps</span></div></div>
           <a class="c-live" href="https://royken-rorlegger-3pa5.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
         </div>
         <div class="card rv" style="transition-delay:.1s">
-          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1580827929620-e1a34bc162fd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tomodomo" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://tomodomo-demo-premium.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
+          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1580827929620-e1a34bc162fd?q=80&w=1935&auto=format&fit=crop" alt="Tomodomo" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://tomodomo.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
           <div class="c-body"><div class="c-tier">Premium — Restaurant</div><div class="c-name">Tomodomo</div><p class="c-desc">Premium restaurant med meny, galleri og blogg.</p><div class="c-tags"><span class="c-tag">7 sider</span><span class="c-tag">Meny</span><span class="c-tag">Galleri</span><span class="c-tag">Blogg</span></div></div>
           <a class="c-live" href="https://tomodomo.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
         </div>
         <div class="card rv" style="transition-delay:.2s">
-          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1704475517731-7575f517b800?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Boligelektrikeren Bærum" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://bolig-elektrikeren-demo-growth.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
+          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1704475517731-7575f517b800?q=80&w=1470&auto=format&fit=crop" alt="Boligelektrikeren Bærum" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://boligelektrikern.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
           <div class="c-body"><div class="c-tier">Growth — Elektriker</div><div class="c-name">Boligelektrikeren Bærum</div><p class="c-desc">Nordisk kritt-design med booking og lokal SEO.</p><div class="c-tags"><span class="c-tag">5 sider</span><span class="c-tag">Lokal SEO</span><span class="c-tag">Booking</span><span class="c-tag">Schema</span></div></div>
           <a class="c-live" href="https://boligelektrikern.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
         </div>
         <div class="card rv" style="transition-delay:.3s">
-          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kuba Studio" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://kuba-studio-demo-premium.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
+          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop" alt="Kuba Studio" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://kubastudio.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
           <div class="c-body"><div class="c-tier">Premium — Salong</div><div class="c-name">Kuba Studio</div><p class="c-desc">Luksuriøs salong-nettside med booking, galleri og prisliste.</p><div class="c-tags"><span class="c-tag">7 sider</span><span class="c-tag">Booking</span><span class="c-tag">Galleri</span><span class="c-tag">Prisliste</span></div></div>
           <a class="c-live" href="https://kubastudio.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
         </div>
         <div class="card rv" style="transition-delay:.4s">
-          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nikoleta Lyra Fitness" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://nikoleta-lyra-fitness-demo-starter.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
+          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" alt="Nikoleta Lyra Fitness" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://nikoleta-lyra-fitness.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
           <div class="c-body"><div class="c-tier">Starter — Personlig trener</div><div class="c-name">Nikoleta Lyra Fitness</div><p class="c-desc">PT-nettside med tjenester, timeplan og kontaktskjema.</p><div class="c-tags"><span class="c-tag">4 sider</span><span class="c-tag">Timeplan</span><span class="c-tag">Kontakt</span><span class="c-tag">SEO</span></div></div>
-          <a class="c-live" href="nikoleta-lyra-fitness.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          <a class="c-live" href="https://nikoleta-lyra-fitness.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
         </div>
         <div class="card rv" style="transition-delay:.5s">
-          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1615774925655-a0e97fc85c14?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ProTech Elektro" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://protech-elektro-demo-starter-zaaf.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
+          <div class="c-thumb"><img class="c-img" src="https://images.unsplash.com/photo-1615774925655-a0e97fc85c14?q=80&w=1935&auto=format&fit=crop" alt="ProTech Elektro" loading="lazy"><div class="c-ov"><a class="c-ov-btn" href="https://protech-elektro.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div></div>
           <div class="c-body"><div class="c-tier">Starter — Elektriker</div><div class="c-name">ProTech Elektro</div><p class="c-desc">Ren og moderne elektriker-nettside med kontaktskjema og lokal SEO.</p><div class="c-tags"><span class="c-tag">4 sider</span><span class="c-tag">Kontakt</span><span class="c-tag">Lokal SEO</span><span class="c-tag">Mobil</span></div></div>
           <a class="c-live" href="https://protech-elektro.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
         </div>
@@ -881,7 +796,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
     </div>
   </section>
 
-  <!-- WHY DARK -->
   <section class="why-sec sec">
     <div class="w">
       <div class="why-grid">
@@ -894,7 +808,7 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
             <div class="feat rv" style="transition-delay:.16s"><div class="feat-n">02</div><div><div class="feat-t">Du ser resultatet før du betaler</div><p class="feat-d">Vi bygger en skreddersydd demo med ditt ekte innhold — gratis. Du bestemmer om du vil gå videre.</p></div></div>
             <div class="feat rv" style="transition-delay:.22s"><div class="feat-n">03</div><div><div class="feat-t">3–5× billigere enn byrå</div><p class="feat-d">Et Oslo-byrå tar 25 000–60 000 kr. Vi leverer samme kvalitet for 2 990–8 990 kr.</p></div></div>
             <div class="feat rv" style="transition-delay:.28s"><div class="feat-n">04</div><div><div class="feat-t">Mobil-først, lokal SEO inkludert</div><p class="feat-d">Optimalisert for "elektriker Asker" og "rørlegger Bærum". 70% av kunder søker på mobil.</p></div></div>
-            <div class="feat rv" style="transition-delay:.34s"><div class="feat-n">05</div><div><div class="feat-t">Norsk support — direkte kontakt</div><p class="feat-d">Ingen ticketsystem. Ring eller send WhatsApp og få svar raskt fra folk som kjenner Asker-markedet.</p></div></div>
+            <div class="feat rv" style="transition-delay:.34s"><div class="feat-n">05</div><div><div class="feat-t">Norsk support — direkte kontakt</div><p class="feat-d">Ingen ticketsystem. Ring eller send melding og få svar raskt fra folk som kjenner Asker-markedet.</p></div></div>
           </div>
           <div class="rv" style="margin-top:44px;transition-delay:.4s;display:flex;gap:14px;flex-wrap:wrap">
             <button class="btn btn-gold" onclick="go('kontakt')">Book gratis konsultasjon →</button>
@@ -914,7 +828,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
     </div>
   </section>
 
-  <!-- CINEMATIC BREAK -->
   <div style="position:relative;height:clamp(260px,32vw,420px);overflow:hidden" role="presentation">
     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=85&auto=format&fit=crop" alt="" aria-hidden="true" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.38) saturate(.6)">
     <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 clamp(24px,6vw,80px)">
@@ -922,7 +835,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
     </div>
   </div>
 
-  <!-- COMPARISON -->
   <section class="cmp-sec sec-sm">
     <div class="w">
       <div class="rv" style="max-width:780px">
@@ -946,7 +858,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
     </div>
   </section>
 
-  <!-- CTA BAND -->
   <section class="testi-sec sec-sm">
     <div class="w">
       <div class="rv" style="text-align:center;margin-bottom:56px">
@@ -955,40 +866,24 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       </div>
       <div class="testi-grid">
         <div class="testi rv">
-          <div class="testi-stars" aria-label="5 av 5 stjerner">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
+          <div class="testi-stars" aria-label="5 av 5 stjerner"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
           <p class="testi-q">«Demoen var ferdig dagen etter vi snakket. Akkurat slik jeg hadde sett for meg — bare mye bedre. Skulle ønske jeg hadde gjort dette for to år siden.»</p>
-          <div class="testi-who">
-            <div class="testi-name">Bjørn Haugen</div>
-            <div class="testi-role">Elektriker · Asker</div>
-          </div>
+          <div class="testi-who"><div class="testi-name">Bjørn Haugen</div><div class="testi-role">Elektriker · Asker</div></div>
         </div>
         <div class="testi rv" style="transition-delay:.1s">
-          <div class="testi-stars" aria-label="5 av 5 stjerner">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
+          <div class="testi-stars" aria-label="5 av 5 stjerner"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
           <p class="testi-q">«Prisen var nesten for lav til å tro på — men resultatet er ekte. Fikk tre nye forespørsler første uka nettsiden var live. Anbefales på det sterkeste.»</p>
-          <div class="testi-who">
-            <div class="testi-name">Marianne Skoglund</div>
-            <div class="testi-role">Rørlegger · Bærum</div>
-          </div>
+          <div class="testi-who"><div class="testi-name">Marianne Skoglund</div><div class="testi-role">Rørlegger · Bærum</div></div>
         </div>
         <div class="testi rv" style="transition-delay:.2s">
-          <div class="testi-stars" aria-label="5 av 5 stjerner">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
+          <div class="testi-stars" aria-label="5 av 5 stjerner"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
           <p class="testi-q">«Visste ikke at vi trengte nettside før vi fikk se demoen. Nå er vi blant de første som dukker opp på Google i Asker. Kunne ikke vært enklere.»</p>
-          <div class="testi-who">
-            <div class="testi-name">Lars Erik Nygård</div>
-            <div class="testi-role">Maler · Asker</div>
-          </div>
+          <div class="testi-who"><div class="testi-name">Lars Erik Nygård</div><div class="testi-role">Maler · Asker</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
   <div class="cta-band">
     <div class="cta-inner rv">
       <div>
@@ -1011,9 +906,8 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       </div>
     </div>
   </div>
-
 </main>
-</div><!-- /hjem -->
+</div>
 
 <!-- ══════════════ PAGE: ARBEID ══════════════ -->
 <div class="page" id="page-arbeid" role="main">
@@ -1033,8 +927,8 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       <div class="wf-list">
         <div class="wf rv">
           <div class="wf-ph">
-            <img src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Røyken Rørlegger" loading="lazy">
-            <div class="wf-ph-badge"><span>Growth — 5 490 kr · 5 sider</span></div>
+            <img src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1974&auto=format&fit=crop" alt="Røyken Rørlegger" loading="lazy">
+            <div class="wf-ph-badge">Growth — 5 490 kr · 5 sider</div>
             <div class="wf-ph-ov"><a class="wf-ov-btn" href="https://royken-rorlegger-3pa5.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
           </div>
           <div class="wf-bd">
@@ -1048,8 +942,8 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
         </div>
         <div class="wf flip rv">
           <div class="wf-ph">
-            <img src="https://images.unsplash.com/photo-1580827929620-e1a34bc162fd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tomodomo" loading="lazy">
-            <div class="wf-ph-badge"><span>Premium — 8 990 kr · 7 sider</span></div>
+            <img src="https://images.unsplash.com/photo-1580827929620-e1a34bc162fd?q=80&w=1935&auto=format&fit=crop" alt="Tomodomo" loading="lazy">
+            <div class="wf-ph-badge">Premium — 8 990 kr · 7 sider</div>
             <div class="wf-ph-ov"><a class="wf-ov-btn" href="https://tomodomo.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
           </div>
           <div class="wf-bd">
@@ -1063,8 +957,8 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
         </div>
         <div class="wf rv">
           <div class="wf-ph">
-            <img src="https://images.unsplash.com/photo-1704475517731-7575f517b800?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Boligelektrikeren Bærum" loading="lazy">
-            <div class="wf-ph-badge"><span>Growth — 5 490 kr · 5 sider</span></div>
+            <img src="https://images.unsplash.com/photo-1704475517731-7575f517b800?q=80&w=1470&auto=format&fit=crop" alt="Boligelektrikeren Bærum" loading="lazy">
+            <div class="wf-ph-badge">Growth — 5 490 kr · 5 sider</div>
             <div class="wf-ph-ov"><a class="wf-ov-btn" href="https://boligelektrikern.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
           </div>
           <div class="wf-bd">
@@ -1078,8 +972,8 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
         </div>
         <div class="wf flip rv">
           <div class="wf-ph">
-            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kuba Studio" loading="lazy">
-            <div class="wf-ph-badge"><span>Premium — 8 990 kr · 7 sider</span></div>
+            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop" alt="Kuba Studio" loading="lazy">
+            <div class="wf-ph-badge">Premium — 8 990 kr · 7 sider</div>
             <div class="wf-ph-ov"><a class="wf-ov-btn" href="https://kubastudio.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
           </div>
           <div class="wf-bd">
@@ -1093,8 +987,8 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
         </div>
         <div class="wf rv">
           <div class="wf-ph">
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nikoleta Lyra Fitness" loading="lazy">
-            <div class="wf-ph-badge"><span>Starter — 2 990 kr · 4 sider</span></div>
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" alt="Nikoleta Lyra Fitness" loading="lazy">
+            <div class="wf-ph-badge">Starter — 2 990 kr · 4 sider</div>
             <div class="wf-ph-ov"><a class="wf-ov-btn" href="https://nikoleta-lyra-fitness.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
           </div>
           <div class="wf-bd">
@@ -1109,7 +1003,7 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
         <div class="wf flip rv">
           <div class="wf-ph">
             <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&q=85&auto=format&fit=crop" alt="ProTech Elektro" loading="lazy">
-            <div class="wf-ph-badge"><span>Starter — 2 990 kr · 4 sider</span></div>
+            <div class="wf-ph-badge">Starter — 2 990 kr · 4 sider</div>
             <div class="wf-ph-ov"><a class="wf-ov-btn" href="https://protech-elektro.vercel.app" target="_blank" rel="noopener">Se live nettside <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
           </div>
           <div class="wf-bd">
@@ -1124,7 +1018,7 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       </div>
     </div>
   </section>
-</div><!-- /arbeid -->
+</div>
 
 <!-- ══════════════ PAGE: PRISER ══════════════ -->
 <div class="page" id="page-priser" role="main">
@@ -1195,7 +1089,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
           <button class="btn btn-out pc-btn" onclick="go('kontakt')">Velg Premium →</button>
         </div>
       </div>
-
       <div class="maint-card rv" style="transition-delay:.1s">
         <div>
           <div class="maint-price">499<span>kr/mnd</span></div>
@@ -1204,20 +1097,12 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
         <p class="maint-desc">Hold nettsiden oppdatert uten stress. Send oss endringer og vi fikser det innen 24 timer. Ingen bindingstid.</p>
         <button class="btn btn-out-dk" onclick="go('kontakt')">Legg til vedlikehold</button>
       </div>
-
       <div class="rv" style="transition-delay:.2s;margin-top:64px">
         <div class="ey ey-dk" style="margin-bottom:18px">Hva er inkludert</div>
         <h2 class="h2" style="color:var(--ink);margin-bottom:32px">Detaljert <em class="gl">sammenligning</em></h2>
         <div class="full-cmp">
           <table>
-            <thead>
-              <tr>
-                <th style="width:40%">Funksjon</th>
-                <th class="h-reg" style="text-align:center">Starter</th>
-                <th class="h-pop" style="text-align:center">Growth</th>
-                <th class="h-reg" style="text-align:center">Premium</th>
-              </tr>
-            </thead>
+            <thead><tr><th style="width:40%">Funksjon</th><th class="h-reg" style="text-align:center">Starter</th><th class="h-pop" style="text-align:center">Growth</th><th class="h-reg" style="text-align:center">Premium</th></tr></thead>
             <tbody>
               <tr><td>Antall sider</td><td style="text-align:center;color:var(--ink-55)">4</td><td style="text-align:center;color:var(--gold-l);font-weight:600">5</td><td style="text-align:center;color:var(--ink-55)">7</td></tr>
               <tr><td>Responsivt mobildesign</td><td class="ck">✓</td><td class="ck">✓</td><td class="ck">✓</td></tr>
@@ -1236,7 +1121,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
           </table>
         </div>
       </div>
-
       <div class="rv" style="margin-top:56px;background:var(--stone);padding:40px 44px;display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap;transition-delay:.25s">
         <div>
           <div class="ey ey-dk" style="margin-bottom:12px">Usikker på pakke?</div>
@@ -1246,7 +1130,7 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       </div>
     </div>
   </section>
-</div><!-- /priser -->
+</div>
 
 <!-- ══════════════ PAGE: PROSESS ══════════════ -->
 <div class="page" id="page-prosess" role="main">
@@ -1267,91 +1151,24 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
         <div>
           <div class="ey ey-lt" style="margin-bottom:20px">Steg for steg</div>
           <div class="step-list">
-            <div class="step rv">
-              <div class="step-n">01</div>
-              <div>
-                <div class="step-t">Book en gratis konsultasjon</div>
-                <p class="step-d">En kort prat på telefon eller Google Meet. Du forteller hva bedriften gjør, hvem kundene dine er og hva du ønsker av nettside. Ingen forpliktelse, ingen faktura. Vi lærer å kjenne deg og din bedrift.</p>
-                <span class="step-tag">15 min · Gratis · Ingen forpliktelse</span>
-              </div>
-            </div>
-            <div class="step rv" style="transition-delay:.08s">
-              <div class="step-n">02</div>
-              <div>
-                <div class="step-t">Vi bygger en gratis demo for deg</div>
-                <p class="step-d">Basert på konsultasjonen bygger vi en skreddersydd demo med ditt navn, din adresse, ditt telefonnummer og dine tjenester. Ingen plassholdere — ekte innhold. Du ser nøyaktig hva du får.</p>
-                <span class="step-tag">Klar innen 24–48 timer etter konsultasjon</span>
-              </div>
-            </div>
-            <div class="step rv" style="transition-delay:.16s">
-              <div class="step-n">03</div>
-              <div>
-                <div class="step-t">Du godkjenner og vi starter</div>
-                <p class="step-d">Liker du demoen? Vi setter i gang. Du betaler 50% deposit via Vipps eller bankoverføring — resten betales kun når nettsiden er ferdig og du er fornøyd. Vi starter byggingen umiddelbart.</p>
-                <span class="step-tag">50% nå · 50% ved ferdigstillelse</span>
-              </div>
-            </div>
-            <div class="step rv" style="transition-delay:.24s">
-              <div class="step-n">04</div>
-              <div>
-                <div class="step-t">Revisjoner og godkjenning</div>
-                <p class="step-d">Vi sender en forhåndsvisning-link. Du gir tilbakemeldinger — vi implementerer. 1–3 revisjonsrunder avhengig av pakke. Ingen endring er for liten.</p>
-                <span class="step-tag">1–3 revisjonsrunder</span>
-              </div>
-            </div>
-            <div class="step rv" style="transition-delay:.32s">
-              <div class="step-n">05</div>
-              <div>
-                <div class="step-t">Live på ditt .no-domene</div>
-                <p class="step-d">Nettsiden publiseres på eget .no-domene. Vi kobler DNS via Domeneshop og Vercel. Du betaler resterende 50%. Ferdig og klar for kunder — innen 7 virkedager fra konsultasjonen.</p>
-                <span class="step-tag">Live på 7 dager totalt</span>
-              </div>
-            </div>
+            <div class="step rv"><div class="step-n">01</div><div><div class="step-t">Book en gratis konsultasjon</div><p class="step-d">En kort prat på telefon eller Google Meet. Du forteller hva bedriften gjør, hvem kundene dine er og hva du ønsker av nettside. Ingen forpliktelse, ingen faktura.</p><span class="step-tag">15 min · Gratis · Ingen forpliktelse</span></div></div>
+            <div class="step rv" style="transition-delay:.08s"><div class="step-n">02</div><div><div class="step-t">Vi bygger en gratis demo for deg</div><p class="step-d">Basert på konsultasjonen bygger vi en skreddersydd demo med ditt navn, din adresse og dine tjenester. Ingen plassholdere — ekte innhold.</p><span class="step-tag">Klar innen 24–48 timer etter konsultasjon</span></div></div>
+            <div class="step rv" style="transition-delay:.16s"><div class="step-n">03</div><div><div class="step-t">Du godkjenner og vi starter</div><p class="step-d">Liker du demoen? Vi setter i gang. 50% deposit via Vipps eller bankoverføring — resten betales kun når nettsiden er ferdig og du er fornøyd.</p><span class="step-tag">50% nå · 50% ved ferdigstillelse</span></div></div>
+            <div class="step rv" style="transition-delay:.24s"><div class="step-n">04</div><div><div class="step-t">Revisjoner og godkjenning</div><p class="step-d">Vi sender en forhåndsvisning-link. Du gir tilbakemeldinger — vi implementerer. 1–3 revisjonsrunder avhengig av pakke.</p><span class="step-tag">1–3 revisjonsrunder</span></div></div>
+            <div class="step rv" style="transition-delay:.32s"><div class="step-n">05</div><div><div class="step-t">Live på ditt .no-domene</div><p class="step-d">Nettsiden publiseres på eget .no-domene. Vi kobler DNS via Domeneshop og Vercel. Du betaler resterende 50%. Ferdig innen 7 virkedager.</p><span class="step-tag">Live på 7 dager totalt</span></div></div>
           </div>
-
           <div class="mt-80">
             <div class="ey ey-lt" style="margin-bottom:20px">Ofte stilte spørsmål</div>
             <h2 class="h2" style="margin-bottom:36px">Har du <em class="gd">spørsmål?</em></h2>
             <div class="faq-list">
-              <div class="faq-item">
-                <div class="faq-q">
-                  <span class="faq-q-txt">Hva skjer hvis jeg ikke liker demoen?</span>
-                  <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-                </div>
-                <div class="faq-a"><p class="faq-a-inner">Ingen problem. Demoen er helt gratis — du betaler ingenting. Vi kan gjøre justeringer basert på tilbakemeldingene dine, eller du takker bare nei. Ingen forpliktelse, ingen ubehag.</p></div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-q">
-                  <span class="faq-q-txt">Trenger jeg å gjøre noe selv?</span>
-                  <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-                </div>
-                <div class="faq-a"><p class="faq-a-inner">Minimalt. Vi trenger navn, telefon, adresse og en kort beskrivelse av tjenestene dine. Alt annet ordner vi — inkludert domene og hosting. Konsultasjonen tar bare 15 minutter.</p></div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-q">
-                  <span class="faq-q-txt">Hva med hosting og domene?</span>
-                  <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-                </div>
-                <div class="faq-a"><p class="faq-a-inner">Vi kjøper .no-domenet for deg via Domeneshop (~99 kr/år) og setter opp gratis hosting via Vercel. Alt er inkludert i pakkeprisen. Du eier domenet selv.</p></div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-q">
-                  <span class="faq-q-txt">Kan jeg oppdatere nettsiden etter lansering?</span>
-                  <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-                </div>
-                <div class="faq-a"><p class="faq-a-inner">Ja. Med vedlikeholdsavtalen (499 kr/mnd) kontakter du oss når som helst og vi oppdaterer innen 24 timer. Ingen binding — du kan si opp når som helst.</p></div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-q">
-                  <span class="faq-q-txt">Er nettsidene optimalisert for Google?</span>
-                  <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-                </div>
-                <div class="faq-a"><p class="faq-a-inner">Ja. Growth og Premium inkluderer lokal SEO: optimaliserte sidetitler, meta-beskrivelser, Schema.org strukturdata og Google Maps. Du dukker opp i søk som "elektriker Asker" og "rørlegger Bærum".</p></div>
-              </div>
+              <div class="faq-item"><div class="faq-q"><span class="faq-q-txt">Hva skjer hvis jeg ikke liker demoen?</span><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p class="faq-a-inner">Ingen problem. Demoen er helt gratis — du betaler ingenting. Vi kan gjøre justeringer, eller du takker bare nei. Ingen forpliktelse.</p></div></div>
+              <div class="faq-item"><div class="faq-q"><span class="faq-q-txt">Trenger jeg å gjøre noe selv?</span><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p class="faq-a-inner">Minimalt. Vi trenger navn, telefon, adresse og en kort beskrivelse av tjenestene dine. Alt annet ordner vi — inkludert domene og hosting.</p></div></div>
+              <div class="faq-item"><div class="faq-q"><span class="faq-q-txt">Hva med hosting og domene?</span><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p class="faq-a-inner">Vi kjøper .no-domenet for deg via Domeneshop (~99 kr/år) og setter opp gratis hosting via Vercel. Alt er inkludert i pakkeprisen. Du eier domenet selv.</p></div></div>
+              <div class="faq-item"><div class="faq-q"><span class="faq-q-txt">Kan jeg oppdatere nettsiden etter lansering?</span><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p class="faq-a-inner">Ja. Med vedlikeholdsavtalen (499 kr/mnd) kontakter du oss når som helst og vi oppdaterer innen 24 timer. Ingen binding.</p></div></div>
+              <div class="faq-item"><div class="faq-q"><span class="faq-q-txt">Er nettsidene optimalisert for Google?</span><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p class="faq-a-inner">Ja. Growth og Premium inkluderer lokal SEO: optimaliserte sidetitler, meta-beskrivelser, Schema.org strukturdata og Google Maps.</p></div></div>
             </div>
           </div>
         </div>
-
         <div class="pros-aside">
           <div class="p-card rv">
             <div class="p-card-ey">Vår garanti</div>
@@ -1380,7 +1197,7 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       </div>
     </div>
   </section>
-</div><!-- /prosess -->
+</div>
 
 <!-- ══════════════ PAGE: KONTAKT ══════════════ -->
 <div class="page" id="page-kontakt" role="main">
@@ -1407,19 +1224,17 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
               <div><div class="cs-lbl">Ring oss</div><div class="cs-val">+47 489 23 626</div></div>
               <div class="cs-arr">→</div>
             </a>
-            <a class="cs" href="/cdn-cgi/l/email-protection#711f1e0315061413011e020531161c10181d5f121e1c">
+            <a class="cs" href="mailto:post.studionett@gmail.com">
               <div class="cs-ico em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-              <div><div class="cs-lbl">E-post</div><div class="cs-val"><span class="__cf_email__" data-cfemail="305e5f4254475552405f434470575d51595c1e535f5d">post.studionett@gmail.com</span></div></div>
+              <div><div class="cs-lbl">E-post</div><div class="cs-val">post.studionett@gmail.com</div></div>
               <div class="cs-arr">→</div>
             </a>
           </div>
-
           <div class="ey ey-lt rv" style="margin-bottom:18px;transition-delay:.1s">Book et møte</div>
           <div class="cal-wrap rv" style="transition-delay:.14s">
             <div class="cal-head"><div class="cal-dot"></div><span class="cal-head-txt">Book gratis 15–30 min konsultasjon</span></div>
             <div id="calendly-inline" style="min-width:280px;height:700px"></div>
           </div>
-
           <div class="ey ey-lt rv" style="margin-bottom:18px;margin-top:48px;transition-delay:.18s">Praktisk info</div>
           <div class="inf-list rv" style="transition-delay:.22s">
             <div class="inf-item"><div class="inf-lbl">Responstid</div><div><div class="inf-val">Innen 24 timer</div><div class="inf-sub">Demo klar innen 48 timer etter konsultasjon</div></div></div>
@@ -1428,12 +1243,11 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
             <div class="inf-item"><div class="inf-lbl">Leveringstid</div><div><div class="inf-val">7 virkedager</div><div class="inf-sub">Fra godkjent demo til live nettside</div></div></div>
           </div>
         </div>
-
         <div class="rv" style="transition-delay:.08s">
           <div class="form-card">
             <div class="form-card-h">Send oss en melding</div>
             <form id="cf" action="https://formspree.io/f/mzdknvqo" method="POST">
-              <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px">
+              <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
               <div class="frow">
                 <div class="fg"><label class="flbl" for="nm">Navn *</label><input class="fi" type="text" id="nm" name="name" placeholder="Ditt navn" required aria-required="true" autocomplete="name"></div>
                 <div class="fg"><label class="flbl" for="ph">Telefon *</label><input class="fi" type="tel" id="ph" name="phone" placeholder="+47 000 00 000" required aria-required="true" autocomplete="tel"></div>
@@ -1465,9 +1279,8 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       </div>
     </div>
   </section>
-</div><!-- /kontakt -->
+</div>
 
-<!-- MOBILE STICKY BAR -->
 <div class="mob-bar" id="mob-bar">
   <a class="mob-bar-num" href="tel:+4748923626">+47 489 23 626</a>
   <a class="mob-bar-btn" href="tel:+4748923626">
@@ -1476,7 +1289,6 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
   </a>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="ft">
     <div>
@@ -1484,7 +1296,7 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
       <p class="f-tag">Profesjonelle nettsider for norske bedrifter — levert på 7 dager.</p>
       <div class="f-contact">
         <div class="fci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.08-1.08a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+4748923626">+47 489 23 626</a></div>
-        <div class="fci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="/cdn-cgi/l/email-protection#9ef0f1ecfae9fbfceef1edeadef9f3fff7f2b0fdf1f3"><span class="__cf_email__" data-cfemail="b0dedfc2d4c7d5d2c0dfc3c4f0d7ddd1d9dc9ed3dfdd">[email&#160;protected]</span></a></div>
+        <div class="fci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:post.studionett@gmail.com">post.studionett@gmail.com</a></div>
         <div class="fci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Asker, Akershus, Norge</span></div>
       </div>
     </div>
@@ -1499,14 +1311,12 @@ footer{background:var(--black);padding:clamp(48px,6vw,80px) clamp(24px,5.5vw,80p
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const darkPages = new Set(['hjem']);
-
-// Single reusable IntersectionObserver — never recreated
 const revObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (!e.isIntersecting) return;
-    const d = parseFloat(e.target.dataset.delay || e.target.style.transitionDelay || 0) * 1000;
+    const d = parseFloat(e.target.style.transitionDelay || 0) * 1000;
     if (d > 0) setTimeout(() => e.target.classList.add('up'), d);
     else e.target.classList.add('up');
     revObs.unobserve(e.target);
@@ -1534,6 +1344,7 @@ function go(p) {
   if (nb) nb.classList.add('act');
   history.pushState({ p }, '', '#' + p);
   requestAnimationFrame(rev);
+  if (p === 'kontakt') setTimeout(initCalendly, 200);
 }
 
 window.addEventListener('popstate', e => go((e.state && e.state.p) || 'hjem'));
@@ -1543,7 +1354,6 @@ window.addEventListener('popstate', e => go((e.state && e.state.p) || 'hjem'));
   else rev();
 })();
 
-// Throttled scroll with rAF — zero layout thrashing
 let scrollRAF = false;
 window.addEventListener('scroll', () => {
   if (scrollRAF) return;
@@ -1577,7 +1387,6 @@ function cm() {
   hamBtn.setAttribute('aria-label', 'Åpne meny');
 }
 
-// FAQ toggle
 document.addEventListener('click', e => {
   const q = e.target.closest('.faq-q');
   if (!q) return;
@@ -1595,55 +1404,38 @@ document.addEventListener('click', e => {
   }
 });
 
-// Form
 const cf = document.getElementById('cf');
 if (cf) cf.addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('sbtn');
-  const originalHTML = btn.innerHTML;
   btn.innerHTML = 'Sender...';
   btn.disabled = true;
   try {
     const r = await fetch(cf.action, { method: 'POST', body: new FormData(cf), headers: { 'Accept': 'application/json' } });
     if (r.ok) {
       cf.innerHTML = '<div style="padding:40px 0;text-align:center"><div style="font-size:2.5rem;margin-bottom:16px">✓</div><div style="font-family:var(--serif);font-size:1.6rem;font-weight:300;color:var(--txt);margin-bottom:10px">Takk for din forespørsel!</div><p style="font-size:.92rem;color:var(--txt-65);line-height:1.7">Vi svarer innen 24 timer.</p></div>';
-    } else {
-      throw new Error('server');
-    }
+    } else throw new Error();
   } catch {
     btn.innerHTML = 'Noe gikk galt — prøv igjen';
     btn.disabled = false;
   }
 });
 
-// Calendly inline widget — load only when kontakt page is visited
 function initCalendly() {
   if (document.getElementById('calendly-inline') && !window._calLoaded) {
     window._calLoaded = true;
     const s = document.createElement('script');
     s.src = 'https://assets.calendly.com/assets/external/widget.js';
     s.async = true;
-    s.onload = () => {
-      Calendly.initInlineWidget({
-        url: 'https://calendly.com/post-studionett/30min',
-        parentElement: document.getElementById('calendly-inline'),
-        prefill: {},
-        utm: {}
-      });
-    };
+    s.onload = () => Calendly.initInlineWidget({
+      url: 'https://calendly.com/post-studionett/30min',
+      parentElement: document.getElementById('calendly-inline'),
+      prefill: {}, utm: {}
+    });
     document.head.appendChild(s);
   }
 }
-
-// Patch go() to init Calendly when navigating to kontakt
-const _go = go;
-window.go = function(p) {
-  _go(p);
-  if (p === 'kontakt') setTimeout(initCalendly, 200);
-};
-// Also init if page loads directly on #kontakt
 if (location.hash === '#kontakt') setTimeout(initCalendly, 400);
-
 </script>
 </body>
 </html>
