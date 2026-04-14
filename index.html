@@ -1473,7 +1473,9 @@ if (cf) cf.addEventListener('submit', async e => {
 
   document.getElementById('ck-accept').addEventListener('click', () => {
     localStorage.setItem(KEY, 'accepted');
+    window._cookieConsent = 'accepted';
     banner.classList.remove('show');
+    initCalendly();
   });
 
   document.getElementById('ck-decline').addEventListener('click', () => {
